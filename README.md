@@ -1,4 +1,10 @@
 # elt_snowflake_dbt
+# *Overview*
+# *Prerequisites*
+To follow along this learning need to be available on system:
+- dbt installed
+- snowflake account with datawarehouse, database, schema
+# *Project Flow*
 ELT CSV file into Snowflake using dbt:
 1. (Snowflake) Warehouse, database, schema for landing document
 2. (dbt) setup project in local machine & create connection to Snowflake
