@@ -91,11 +91,11 @@ def load_csv_to_snowflake(
 
 if __name__ == "__main__":
     #  Replace these with your actual Snowflake credentials and details
-    snowflake_account = "*******"  # e.g., "myaccount.us-east-1.snowflakecomputing.com"
-    snowflake_user = "******"
-    snowflake_password = "*******"
-    snowflake_database = "MULYOMART"
-    snowflake_schema = "M_LANDING"
+    snowflake_account = "MWTYCYK-WR85799"  # e.g., "myaccount.us-east-1.snowflakecomputing.com"
+    snowflake_user = "MSANTOSO44"
+    snowflake_password = "Santosomulyo52"
+    snowflake_database = "MYDATA"
+    snowflake_schema = "LANDING"
     snowflake_warehouse = "COMPUTE_WH"
     table_name = "customers"  # The name of the table you want to create or load into
     csv_file_path = "customers_data.csv"  #  Path to your CSV file
