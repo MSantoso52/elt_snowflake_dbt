@@ -51,6 +51,7 @@ ELT CSV file into Snowflake using dbt:
    ```bash
    # create sql file
    vim customers_stg.sql
+   vim orders_stg.sql
    vim orderitems_stg.sql
    vim order_fact.sql
    vim customerrevenue.sql
