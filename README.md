@@ -50,6 +50,9 @@ ELT CSV file into Snowflake using dbt:
 5. Make sql for data transformation on models folder, ensure remove the other sql
    ```bash
    # create sql file
+   vim customers_stg.sql
+   vim orderitems_stg.sql
+   vim order_fact.sql
    vim customerrevenue.sql
 
    # run dbt
