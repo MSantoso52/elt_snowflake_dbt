@@ -55,4 +55,4 @@ ELT CSV file into Snowflake using dbt:
    # run dbt
    dbt run
    ```
-6. Final data model customerrevenue on CONSUMPTION table
+6. Final data model customerrevenue on CONSUMPTION table ready insight generation or data analytics.
