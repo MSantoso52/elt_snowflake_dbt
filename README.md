@@ -39,7 +39,14 @@ ELT CSV file into Snowflake using dbt:
    ```bash
    python3 csv_to_snowflake.py
    ```
-3. (dbt) setup project in local machine & create connection to Snowflake
-4. Extract -- provide CSV file as data source
-5. Load -- CSV file into Snowflake SQL using Python
-6. Transform -- create SQL query by joining columns from available table for specific needs using dbt 
+3. Checking import result by make simple SQL query on Snowflake
+   ```SQL
+   select c.customer_id, c.full_name, count(o.order_id) as no_of_orders
+   from customers c
+   join orders o on c.customer_id = o.customer_id
+   group by c.customer_id, c.full_name
+   order by no_of_orders;
+   ```
+5. Extract -- provide CSV file as data source
+6. Load -- CSV file into Snowflake SQL using Python
+7. Transform -- create SQL query by joining columns from available table for specific needs using dbt 
