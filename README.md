@@ -21,7 +21,7 @@ To follow along this learning need to be available on system:
   # follow along the query to be filled in
   account: ******
   user: *****
-  database: MYDATA
+  database: MULYOMART
   warehouse: COMPUTE_WH
   role: ACCOUNTADMIN
   schema: CONSUMPTION  
@@ -35,8 +35,11 @@ To follow along this learning need to be available on system:
   * database: MULYOMART
 # *Project Flow*
 ELT CSV file into Snowflake using dbt:
-1. (Snowflake) Warehouse, database, schema for landing document
-2. (dbt) setup project in local machine & create connection to Snowflake
-3. Extract -- provide CSV file as data source
-4. Load -- CSV file into Snowflake SQL using Python
-5. Transform -- create SQL query by joining columns from available table for specific needs using dbt 
+1. Import CSV files into Snowfake
+   ```bash
+   python3 csv_to_snowflake.py
+   ```
+3. (dbt) setup project in local machine & create connection to Snowflake
+4. Extract -- provide CSV file as data source
+5. Load -- CSV file into Snowflake SQL using Python
+6. Transform -- create SQL query by joining columns from available table for specific needs using dbt 
