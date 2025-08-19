@@ -55,5 +55,3 @@ ELT CSV file into Snowflake using dbt:
    # run dbt
    dbt run
    ```
-7. Load -- CSV file into Snowflake SQL using Python
-8. Transform -- create SQL query by joining columns from available table for specific needs using dbt 
