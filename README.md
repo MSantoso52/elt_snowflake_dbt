@@ -35,7 +35,7 @@ To follow along this learning need to be available on system:
   * database: MULYOMART
 # *Project Flow*
 ELT CSV file into Snowflake using dbt:
-1. Import CSV files into Snowfake
+1. Import CSV files into Snowfake: customer_data.csv, orders.csv, itemorders,csv
    ```bash
    python3 csv_to_snowflake.py
    ```
@@ -47,6 +47,13 @@ ELT CSV file into Snowflake using dbt:
    group by c.customer_id, c.full_name
    order by no_of_orders;
    ```
-5. Extract -- provide CSV file as data source
-6. Load -- CSV file into Snowflake SQL using Python
-7. Transform -- create SQL query by joining columns from available table for specific needs using dbt 
+5. Make sql for data transformation on models folder, ensure remove the other sql
+   ```bash
+   # create sql file
+   vim customerrevenue.sql
+
+   # run dbt
+   dbt run
+   ```
+7. Load -- CSV file into Snowflake SQL using Python
+8. Transform -- create SQL query by joining columns from available table for specific needs using dbt 
