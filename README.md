@@ -24,7 +24,7 @@ To follow along this learning need to be available on system:
   database: MULYOMART
   warehouse: COMPUTE_WH
   role: ACCOUNTADMIN
-  schema: CONSUMPTION  
+  schema: LANDING  
   ....
 
   # checking dbt connection on Snowflake
@@ -35,7 +35,7 @@ To follow along this learning need to be available on system:
   * database: MULYOMART
 # *Project Flow*
 ELT CSV file into Snowflake using dbt:
-1. Import CSV files into Snowfake: customer_data.csv, orders.csv, itemorders,csv
+1. Import CSV files into Snowfake: customer_data.csv, order_data.csv, order_item_data.csv
    ```bash
    python3 csv_to_snowflake.py
    ```
@@ -55,3 +55,4 @@ ELT CSV file into Snowflake using dbt:
    # run dbt
    dbt run
    ```
+6. Final data model customerrevenue on CONSUMPTION table
