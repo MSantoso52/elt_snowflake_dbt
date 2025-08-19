@@ -3,7 +3,7 @@
 Project repo to demonstrate data transformation in Snowflake datawarehouse, project start with importing CSV file into Snowflake datawarehouse, setup dbt in local machine to communicate with Snowflake cloud service. DBT is powerful tool to transforming data within datawarehouse -- Snowflake. 
 # *Prerequisites*
 To follow along this learning need to be available on system:
-- dbt installed
+- dbt installed & connrction setup with snowflake
   ```bash
   # create virtual environment on local
   python -m venv dbt_snowflake
@@ -16,6 +16,7 @@ To follow along this learning need to be available on system:
   pip install dbt-snowflake
 
   # initialize dbt to connect Snowflake
+  dbt init
   ```
 - snowflake account with datawarehouse, database, schema
 # *Project Flow*
