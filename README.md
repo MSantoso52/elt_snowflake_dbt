@@ -17,6 +17,15 @@ To follow along this learning need to be available on system:
 
   # initialize dbt to connect Snowflake
   dbt init
+  ....
+  # follow along the query to be filled in
+  account: ******
+  user: *****
+  database: MYDATA
+  warehouse: COMPUTE_WH
+  role: ACCOUNTADMIN
+  schema: CONSUMPTION  
+  ....
 
   # checking dbt connection on Snowflake
   dbt debug
