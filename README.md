@@ -17,8 +17,13 @@ To follow along this learning need to be available on system:
 
   # initialize dbt to connect Snowflake
   dbt init
+
+  # checking dbt connection on Snowflake
+  dbt debug
   ```
-- snowflake account with datawarehouse, database, schema
+- snowflake account with datawarehouse, database
+  * datawarehouse: COMPUTE_WH
+  * database: MULYOMART
 # *Project Flow*
 ELT CSV file into Snowflake using dbt:
 1. (Snowflake) Warehouse, database, schema for landing document
