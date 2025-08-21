@@ -3,7 +3,7 @@
 # *Overview*
 Project repo to demonstrate data transformation in Snowflake warehouse, project start with importing CSV file into Snowflake warehouse, setup dbt in local machine to communicate with Snowflake cloud service. DBT is powerful tool to transforming data within warehouse -- Snowflake.  ELT start with exctracting/importing CSV file into Snowflake, Loading process after data source load as database, then Transfroming process using DBT from local machine.
 # *Prerequisites*
-To follow along this learning need to be available on system:
+To follow along this project need to be available on system:
 - dbt installed & connection setup with snowflake
   ```bash
   # create virtual environment on local
